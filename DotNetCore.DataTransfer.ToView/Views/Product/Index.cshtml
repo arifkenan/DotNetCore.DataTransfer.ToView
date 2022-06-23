@@ -1,0 +1,16 @@
+﻿
+@{
+
+    var products = TempData["ProductList"] ;
+
+
+}
+<ul>
+
+  
+
+    @foreach (var item in ViewBag.UrunListesi)
+    {
+        <li>Product Name: @item.ProductName -- Price: @item.Price</li>        
+    }
+</ul>
